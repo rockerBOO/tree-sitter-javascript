@@ -56,7 +56,7 @@ Template strings
 (program
   (expression_statement (template_string))
   (expression_statement (template_string (template_substitution (binary_expression (number) (number)))))
-	(expression_statement (template_string))
+  (expression_statement (template_string))
   (expression_statement (template_string
     (template_substitution
       (binary_expression (number) (number)))
@@ -66,8 +66,8 @@ Template strings
   (expression_statement (template_string))
   (expression_statement (template_string
     (template_substitution (number))))
-	(expression_statement (template_string))
-	(expression_statement (template_string))
+  (expression_statement (template_string))
+  (expression_statement (template_string))
   (expression_statement (template_string
     (template_substitution (string))
     (template_substitution (string))))
@@ -1357,7 +1357,7 @@ i = <Foo:Bar bar={}>{...children}</Foo:Bar>
       (identifier)
       (jsx_attribute
         (property_identifier)
-        (jsx_expression (member_expression (identifier) (property_identifier)))) (jsx_closing_slash))))
+        (jsx_expression (member_expression (identifier) (property_identifier)))) (jsx_closing_slash)))))
   (expression_statement (assignment_expression (identifier)
     (jsx_element
       (jsx_opening_element
