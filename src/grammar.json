@@ -2222,8 +2222,8 @@
           "value": "<"
         },
         {
-          "type": "STRING",
-          "value": "/"
+          "type": "SYMBOL",
+          "name": "jsx_closing_slash"
         },
         {
           "type": "FIELD",
@@ -2266,14 +2266,18 @@
           }
         },
         {
-          "type": "STRING",
-          "value": "/"
+          "type": "SYMBOL",
+          "name": "jsx_closing_slash"
         },
         {
           "type": "STRING",
           "value": ">"
         }
       ]
+    },
+    "jsx_closing_slash": {
+      "type": "STRING",
+      "value": "/"
     },
     "_jsx_attribute": {
       "type": "CHOICE",

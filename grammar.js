@@ -541,7 +541,7 @@ module.exports = grammar({
 
     jsx_closing_element: $ => seq(
       '<',
-      '/',
+      $.jsx_closing_slash,
       field('name', $._jsx_element_name),
       '>'
     ),
@@ -550,9 +550,11 @@ module.exports = grammar({
       '<',
       field('name', $._jsx_element_name),
       repeat(field('attribute', $._jsx_attribute)),
-      '/',
+      $.jsx_closing_slash,
       '>'
     ),
+
+		jsx_closing_slash: $ => '/',
 
     _jsx_attribute: $ => choice($.jsx_attribute, $.jsx_expression),
 

@@ -1535,7 +1535,22 @@
           }
         ]
       }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "jsx_closing_slash",
+          "named": true
+        }
+      ]
     }
+  },
+  {
+    "type": "jsx_closing_slash",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "jsx_element",
@@ -1732,6 +1747,16 @@
           }
         ]
       }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "jsx_closing_slash",
+          "named": true
+        }
+      ]
     }
   },
   {
@@ -3030,6 +3055,10 @@
   {
     "type": "class",
     "named": false
+  },
+  {
+    "type": "comment",
+    "named": true
   },
   {
     "type": "const",

@@ -24,6 +24,7 @@ Template strings
 ============================================
 
 `one line`;
+`one line${1 + 1}`;
 `multi
   line`;
 
