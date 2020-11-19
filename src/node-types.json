@@ -1633,8 +1633,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": false,
+      "required": true,
       "types": [
+        {
+          "type": "jsx_closing_slash",
+          "named": true
+        },
         {
           "type": "jsx_element",
           "named": true

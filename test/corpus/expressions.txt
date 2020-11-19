@@ -1163,7 +1163,7 @@ b = <Foo.Bar.Baz.Baz></Foo.Bar.Baz.Baz>;
     (jsx_self_closing_element
       (identifier)
       (jsx_attribute (property_identifier) (string))
-      (jsx_attribute (property_identifier) (jsx_expression (number))) (jsx_closing_slash)))) 
+      (jsx_attribute (property_identifier) (jsx_expression (number))) (jsx_closing_slash))))
   (expression_statement (assignment_expression
     (identifier)
     (jsx_element
@@ -1190,13 +1190,13 @@ a = <E><></></E>;
   (expression_statement
     (assignment_expression
       (identifier)
-      (jsx_fragment)))
+      (jsx_fragment (jsx_closing_slash))))
   (expression_statement
     (assignment_expression
       (identifier)
       (jsx_element
         (jsx_opening_element (identifier))
-        (jsx_fragment)
+        (jsx_fragment (jsx_closing_slash))
         (jsx_closing_element (jsx_closing_slash) (identifier))))))
 
 ==============================================
@@ -1335,7 +1335,7 @@ i = <Foo:Bar bar={}>{...children}</Foo:Bar>
       (jsx_opening_element (nested_identifier (identifier) (identifier)))
       (jsx_closing_element (jsx_closing_slash) (nested_identifier (identifier) (identifier))))))
   (expression_statement (assignment_expression (identifier)
-    (jsx_fragment (jsx_text) (jsx_self_closing_element (identifier) (jsx_closing_slash)) (jsx_text))))
+    (jsx_fragment (jsx_text) (jsx_self_closing_element (identifier) (jsx_closing_slash)) (jsx_text) (jsx_closing_slash))))
   (expression_statement (assignment_expression (identifier)
     (jsx_element
       (jsx_opening_element (identifier))
@@ -1357,7 +1357,7 @@ i = <Foo:Bar bar={}>{...children}</Foo:Bar>
       (identifier)
       (jsx_attribute
         (property_identifier)
-        (jsx_expression (member_expression (identifier) (property_identifier)))) (jsx_closing_slash)))))
+        (jsx_expression (member_expression (identifier) (property_identifier)))) (jsx_closing_slash))))
   (expression_statement (assignment_expression (identifier)
     (jsx_element
       (jsx_opening_element

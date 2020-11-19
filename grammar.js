@@ -490,7 +490,7 @@ module.exports = grammar({
       field('close_tag', $.jsx_closing_element)
     ),
 
-    jsx_fragment: $ => seq('<', '>', repeat($._jsx_child), '<', '/', '>'),
+    jsx_fragment: $ => seq('<', '>', repeat($._jsx_child), '<', $.jsx_closing_slash, '>'),
 
     jsx_text: $ => /[^{}<>]+/,
 

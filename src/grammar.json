@@ -2020,8 +2020,8 @@
           "value": "<"
         },
         {
-          "type": "STRING",
-          "value": "/"
+          "type": "SYMBOL",
+          "name": "jsx_closing_slash"
         },
         {
           "type": "STRING",
